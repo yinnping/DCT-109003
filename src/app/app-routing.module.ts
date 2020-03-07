@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'p3', component: Page1Component, outlet: 'pop3' },
   { path: 'p4', component: Page2Component, outlet: 'pop4' },
   { path: 'tables', component: TablesComponent },
-  { path: 'charts/:type', component: ChartsComponent },
+  { path: 'charts', component: ChartsComponent },
   {
     path: 'utilities',
     children: [

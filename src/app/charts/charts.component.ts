@@ -21,9 +21,16 @@ export class ChartsComponent implements OnInit {
     chartPieDemo();
     chartBarDemo();
 
-    this.route.paramMap.subscribe(v => {
+    this.route.queryParamMap.subscribe(v => {
       this.type = +v.get('type');
     });
   }
 
+  plusOne() {
+    this.router.navigate(['charts'], {
+      queryParams: {
+        type: this.type + 1
+      }
+    });
+  }
 }
