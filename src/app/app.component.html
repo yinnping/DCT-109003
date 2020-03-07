@@ -21,7 +21,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item" routerLinkActive="active">
-      <a class="nav-link" routerLink="/dashboard">
+      <a class="nav-link" [routerLink]="[{ outlets: { pop: ['p1'], pop2: ['p2'] } }]">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Dashboard</span></a
       >
@@ -456,6 +456,14 @@
 
       <!-- Begin Page Content -->
       <router-outlet></router-outlet>
+      <h2>haha</h2>
+      <router-outlet name="pop"></router-outlet>
+      <h2>hehe</h2>
+      <router-outlet name="pop2"></router-outlet>
+      <h2>hahe</h2>
+      <router-outlet name="pop3"></router-outlet>
+      <h2>heha</h2>
+      <router-outlet name="pop4"></router-outlet>
     </div>
     <!-- End of Main Content -->
 
