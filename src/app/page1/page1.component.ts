@@ -9,6 +9,8 @@ export class Page1Component implements OnInit {
 
   constructor() { }
 
+  item = 0;
+
   ngOnInit(): void {
   }
 
